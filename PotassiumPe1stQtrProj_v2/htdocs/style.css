@@ -1,0 +1,151 @@
+*{
+	font-family: century gothic;
+	overflow-x: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+
+.header{
+	width: 100%;
+	height: 70px;
+	background-color: #164686;
+	box-shadow: 3px 3px #D3D3D3;
+	padding: 5px;
+	z-index: 1;
+	position: relative;
+}
+
+.one video, .three video, .five video{
+	float: right;
+	margin: 100px 175px 100px 75px;
+}
+
+.two video, .four img{
+	float: left;
+	margin: 100px 125px 100px 150px;
+}
+
+#icon{
+	width: 55px;
+	height: 50px;
+	z-index: 2;
+	position: absolute;
+	margin: 10px auto auto 150px;
+}
+
+#icon:hover{ 
+	transition: 0.7s; 
+	transform: rotate(360deg); 
+	-ms-transform: rotate(360deg); 
+	-webkit-transform: rotate(360deg); 
+}
+
+#fourth{
+	width: 540px;
+	height: 300px;
+}
+
+.one h2, .three h2, .five h2{
+	margin: 100px auto 20px 150px;
+}
+
+.one p, .three p, .five p{
+	margin: 10px auto 10px 150px;
+	font-size: 18px;
+}
+
+.two h2, .four h2{
+	margin: 100px auto 20px auto;
+}
+
+.two p, .four p{
+	margin: 10px 150px 10px auto;
+	font-size: 18px;
+}
+
+.center{
+	text-align: center;
+	margin-top: 50px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.container, .containers{
+	display: flex;
+	justify-content: center;
+}
+
+.wtitle, .atitle{
+  	border: 1px solid black;
+	text-align: center;
+	width: 600px;
+	height: 80px;
+	position: relative;
+	
+}
+
+.wtitle h2{
+	padding: 20px;
+}
+
+.atitle h2{
+	padding: 10px;
+}
+
+.websites, .articles{
+  	border: 1px solid black;
+	width: 600px;
+	height: 500px;
+}
+
+.wtitle{
+	margin: 100px 50px auto 100px;
+	background-color: #528aae;
+	color: #152238;
+}
+
+.atitle{
+	margin: 100px 100px auto 50px;
+	background-color: #528aae;
+	color: #152238;
+}
+
+.websites{
+	margin: auto 50px 100px 100px;
+}
+
+.articles{
+	margin: auto 100px 100px 50px;
+}
+
+.websites p, .articles p{
+	margin: 5px 10px 10px 30px;
+}
+
+.websites h3, .articles h3{
+	margin: 15px 10px 5px 30px;
+}
+
+.footer{
+   	left: 0;
+   	bottom: 0;
+   	width: 100%;
+	height: 75px;
+   	background-color: #18191a;
+}
+
+.footer p{
+	color: white;
+	display: inline-block;
+	position: relative;
+	margin: 32px 100px auto 275px;
+	transition: transform .2s;
+}
+
+.footer p:hover{
+	-ms-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5); 
+}
