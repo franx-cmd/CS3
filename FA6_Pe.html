@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FA6_Pe</title>
+
+		<style>
+			a:link{
+				font-family: century gothic;
+                		text-decoration: none;
+                		font-size: 30px;
+				margin-left: 10px;
+			}
+
+			.link1:link {
+                		color: white;
+				background-color: lightblue;
+            	}
+
+            	.link1:visited {
+                		background-color: #81C664;
+                		color: #0D592E;
+            	}
+
+			.link1:hover {
+                		background-color: #BD2D2B;
+                		color: #640C0A;
+			}
+
+			.link1:active {
+                		background-color: #8C52FF;
+               		color: #4D3282;
+			}
+
+			.link2:link {
+               		background-color: pink;
+                		color: white;
+			}
+
+			.link2:visited {
+              		background-color: #4B65DB;
+                		color: #004AAD;
+			}
+
+			.link2:hover {
+                		background-color: #F1519B;
+                		color: #AA336A;
+			}
+
+			.link2:active {
+                		background-color: #5a5a5a;
+                		color: black;
+			}
+
+			div {
+                		border: 1px solid black;
+				font-size: 30px;
+                		width: 150px;
+                		height: 150px;
+                		margin-top: 30px;
+                		margin-left: 10px;
+			}
+
+			p {
+				margin: 10px 0 0 0;
+			}
+
+			#one:target {
+                		border: 1px solid black;
+                		background-color: #264653;
+                		color: #D1B867;
+			}
+
+			#two:target {
+                		border: 10px dotted green;
+                		background-color: #2A9D8F;
+                		color: orange;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<a class="link1" href="#one">First Link</a>
+          	<a class="link2" href="#two">Second Link</a>
+           
+		<div id="one">
+             	<p>Div 1 here</p>
+           </div>
+           
+		<br>
+
+		<div id="two">
+               	<p>Div 2 here</p>
+		</div>
+	</body>
+</html>
