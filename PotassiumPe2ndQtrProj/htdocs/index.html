@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" type="image/x-icon" href="../images/Website Icon.png">
+		<Title>Home Page</Title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="Research Website, Research, Website for Research, How to Conduct a Research, Conducting Research">
+		<meta name= "description" content = "References, knowledge, and more; ReSEARCH will help you find what you're looking for. ReSEARCH is a website that provides you with the information and literature needed for conducting research. Essentially, it includes images, videos, and other materials that may aid you." />
+		<style>
+			*{
+				font-family: century gothic;
+				overflow-x: hidden;
+				margin: 0px;
+				padding: 0px;
+			}
+
+			#icon{
+				width: 90px; 
+				height: 80px;
+				position: absolute;
+				z-index: 2;
+				left: 200px;
+				top: 20px;
+			}
+
+			#bg{
+				position: relative;
+				width: 100%; 
+				height: 500px;
+				z-index: 1;
+				}
+
+			img{
+				width: 150px; 
+				height: 150px;
+			}
+
+			article{
+				display: flex;
+				justify-content: center;
+			}
+
+			article img{
+				margin: 150px 100px auto 100px;
+ 				padding: 5px;
+				transition: transform .2s;
+			}
+
+			article img:hover{
+ 				-ms-transform: scale(1.5);
+				-webkit-transform: scale(1.5);
+				transform: scale(1.5); 
+			}
+
+			.block{
+				position: relative;
+			}
+
+			.website{
+				position: absolute;
+  				top: 220px;
+  				bottom: 50px;
+				margin-left: 13%;
+				margin-right: 13%;
+				font-size: 24px;
+  				color: white;
+				text-shadow: 0 0 5px #fff;
+				z-index: 2;
+			}
+
+			.website p{
+				text-indent: 50px;
+			}
+
+			a{
+				text-decoration: none;
+			}
+
+			#getstarted{
+				margin-top: 175px;
+				text-align: center;
+				transition: transform .2s;
+			}
+
+			#getstarted:hover{
+				-ms-transform: scale(1.5);
+				-webkit-transform: scale(1.5);
+				transform: scale(1.5); 
+			}
+
+			p{
+				text-align:center;
+				margin-bottom: 50px; 
+			}
+
+			footer{
+   				left: 0;
+   				bottom: 0;
+   				width: 100%;
+				height: 50px;
+   				background-color: #18191a;
+				overflow-y: hidden;
+			}
+
+			footer p{
+				text-align: center;
+				color: white;
+				margin-top: 12px;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<img src="../images/Icon.png" alt="Website Icon" id="icon">
+
+		<div class="block">
+			<img src="../images/background.png" alt="Background" id="bg">
+			<div class="website">
+				<h1>ReSEARCH</h1>
+				<p>References, knowledge, and more; ReSEARCH will help you find what you’re looking for.</p>
+			</div>
+		</div>
+
+		<a href="../htdocs/getting started page.html">
+		<h1 id="getstarted">GET STARTED</h1>
+			<p>The Process of Conducting Research: An Overview</p>
+		</a>
+		
+		<article>
+			<a href="...">
+				<img src="../images/about_us.png" alt="About Us Icon">
+				<p>About Us</p>
+			</a>
+
+			<a href="...">
+				<img src="../images/contact_us.png" alt="Contact Us Icon">
+				<p>Contact Us</p>
+			</a>
+
+			<a href="...">
+				<img id="faq" src="../images/FAQ.png" alt="FAQ Icon">
+				<p>FAQ</p>
+			</a>
+		</article>	
+		
+		<footer>
+			<p>&#169; 2022 Jeann Frances Khristy S. Pe</p>
+		</footer>
+	</body>
+</html>
