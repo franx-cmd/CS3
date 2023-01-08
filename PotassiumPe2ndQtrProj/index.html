@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" type="image/x-icon" href="images/Website Icon.png">
+		<Title>Home</Title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="Research Website, Research, Website for Research, How to Conduct a Research, Conducting Research">
+		<meta name= "description" content = "References, knowledge, and more; ReSEARCH will help you find what you're looking for. ReSEARCH is a website that provides you with the information and literature needed for conducting research. Essentially, it includes images, videos, and other materials that may aid you." />
+		<meta charset=UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+		<style>
+			*{
+				overflow-x: hidden;
+			}
+			
+			#icon{
+				width: 15.6vh; 
+				height: 15.2vh;
+				margin-left: 13.9vw;
+				overflow: hidden;
+			}
+
+			.block{
+				position: relative;
+				width: 100%; 
+				height: 100vh;
+				background-image: linear-gradient(rgba(0,0,0,.7), transparent),url(images/background.jpg);
+				background-size: cover;
+				background-position: center;
+			}
+			
+			nav ul li a{ 
+				color: #fff;
+			}
+
+			nav ul li::after{
+				background: #fff;
+			}
+			
+			article{
+				overflow: hidden;
+				height: 77vh;
+				width: 358vw;
+				position: absolute;
+				text-shadow: 0 0 1.3vh #fff;
+				text-align: center;
+			}
+
+			section{
+				width: 130.2vw;
+				margin: 7vh .65vw 0 0;
+				float: left;
+				animation: slide 25s ease infinite;
+			}
+			
+			.text{
+				width: 162.76vw;
+				height: 70vh;
+				margin: 0 3.26vw 0 3.26vw;
+			}
+
+			@keyframes slide{ 
+				0% {transform:translateX(-27%);}
+				10% {transform:translateX(-27%);} 
+				20% {transform:translateX(-27%);}
+				30% {transform:translateX(-128%);} 
+				40% {transform:translateX(-128%);}
+				50% {transform:translateX(-128%);}
+				60% {transform:translateX(-128%);}
+				70% {transform:translateX(-128%);}
+				80% {transform:translateX(-27%);} 
+				90% {transform:translateX(-27%);} 
+				100% {transform:translateX(-27%);} 
+			}
+
+			.text h1{
+				font-size: 11.37vw;
+				color: transparent; 
+				-webkit-text-stroke: 1px #fff; 
+				background: url(images/animation.png); 
+				-webkit-background-clip: text; 
+				background-position: 0 0; 
+				animation: back 17s linear infinite; 
+			}
+
+			@keyframes back{ 
+				100%{ 
+					background-position: 130.2vw 0; 
+				}
+			}
+
+			.text p{
+				color: white;
+				font-size: 1.3vw;
+			}
+
+			a{
+				text-decoration: none;
+			}
+
+			#getstarted{
+				transition: transform .2s;
+			}
+
+			#getstarted:hover{
+				-ms-transform: scale(1.2);
+				-webkit-transform: scale(1.2);
+				transform: scale(1.2); 
+			}
+
+			footer{
+				text-align: center;
+				color: white;
+				margin-top: 70.28vh;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="block">
+			<nav>
+				<div id="icon"></div>
+				<ul>	
+					<li><a href="htdocs/aboutuspage.html">About Us</a></li>
+					<li><a href="htdocs/contact us page.html">Contact Us</a></li>
+					<li><a href="htdocs/faqpage.html">FAQ</a></li>
+				</ul>
+			</nav>
+			
+			<article>
+				<section>
+					<div class="text">
+						<h1>ReSEARCH</h1>
+						<p>References, knowledge, and more; ReSEARCH will help you find what you’re looking for.</p>
+					</div>
+				</section>
+
+				<section>
+					<div class="text">
+						<a href="htdocs/getting started page.html">
+						<h1 id="getstarted">GET STARTED</h1>
+						<p>The Process of Conducting Research: An Overview</p>
+						</a>
+					</div>
+				</section>	
+			</article>
+			
+			<footer>
+				<p>&#169; 2022-2023 Jeann Frances Khristy S. Pe</p>
+			</footer>
+		</div>
+	</body>
+</html>
