@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div>
+			<button onclick="firstPhoto()">Ferret</button>
+			<button onclick="secondPhoto()">Red Panda</button>
+		</div>
+
+		<br>
+
+		<img id="photo" src="red-panda.jpg" width="30%">
+
+		<script>
+			function firstPhoto(){
+				document.getElementById("photo").src = "ferret.jpg";
+			}
+
+			function secondPhoto(){
+				document.getElementById("photo").src = "red-panda.jpg";
+			}
+		</script>
+	</body>
+</html>
+			
