@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+		<h1>Random Number Breakdown</h1>
+		<p id="randomNum"></p>
+		<p id="br"></p>
+
+		<script>
+			var r = Math.floor(Math.random() * 1001);
+			var hund = Math.floor((r/100) % 10) * 100;
+			var tens = Math.floor((r/10) % 10) * 10;
+			var ones = r % 10;
+			var text = "Randomly Generated Number: ";
+			var text2 = "Breakdown: ";
+			var random = text.concat(r);
+			var result = text2.concat(hund, " ", tens, " ", ones);
+
+		     	document.getElementById("randomNum").innerHTML = random;
+		     	document.getElementById("br").innerHTML = result;
+		</script>
+	</body>
+</html>
