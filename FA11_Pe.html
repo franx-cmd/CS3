@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+		<script>
+			var num1 = prompt("Please enter side 1: ", "");
+			var num2 = prompt("Please enter side 2: ", "");
+			var num3 = prompt("Please enter side 3: ", "");
+			var a = parseInt(num1);
+			var b = parseInt(num2);
+			var c = parseInt(num3);
+
+			function determineTriangle(a, b, c){
+				if (a === b && b === c){
+					alert("The triangle is EQUILATERAL.");
+				}
+				
+				else if (a === b || a === c || b === c){
+					alert("The triangle is ISOCELES.");
+				}
+
+				else{
+					alert("The triangle is SCALENE.");
+				}
+			}
+			
+			determineTriangle(a, b, c);
+		</script>
+	</body>
+</html>
