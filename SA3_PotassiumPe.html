@@ -57,33 +57,18 @@
 	<body>
 		<h2> Choose Background Color </h2>
         <ul>
-        	<li onclick="color()"><a href="#" id="purple"> Purple </a></li>
-            <li onclick="color()"><a href="#" id="navy"> Navy </a></li>
-            <li onclick="color()"><a href="#" id="maroon"> Maroon </a></li>
+            <li><a href="#" onclick="color(purple)"> Purple </a></li>
+            <li><a href="#" onclick="color(navy)"> Navy </a></li>
+            <li><a href="#" onclick="color(maroon)"> Maroon </a></li>
         </ul>
 		
 
         <script>
             // Changes background color according to which was pressed
 
-           function color(purple, navy, maroon){
-			purple = document.getElementById("purple");
-			navy = document.getElementById("navy");
-			maroon = document.getElementById("maroon");
-
-			purple.onclick = function(){
-				document.body.style.backgroundColor = "purple";
-			}
-
-			navy.onclick = function(){
-				document.body.style.backgroundColor = "navy";
-			}
-
-			maroon.onclick = function(){
-				document.body.style.backgroundColor = "maroon";
-			}
-		}
-	 
+           function color(click){
+		document.body.style.backgroundColor = color;
+	   } 
         </script>
 	</body>
 </html>
