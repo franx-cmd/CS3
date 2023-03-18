@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Numerology</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<style>
+			body {
+				background: lightblue;
+				text-align: center;
+				font-family: arial;
+				color: navy;
+			}
+			button {
+				padding: 10px;
+				background: violet;
+			}
+			span {
+				font-size: 0.5em;
+				color: maroon;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Your Fortune is in your name</h1>
+		<h2>Your Name is: <span id="thename"></span></h2>
+		<h2>Today's fortune: <span id="fortune"></span></h2>
+		<button onclick="btn()">Click here to enter your name</button>
+		
+		<script>
+			function btn(){
+    				var name = prompt("Please enter your full name:", "");
+    				document.getElementById("thename").innerHTML = name;
+    				var digit = name.length;
+    
+    			while (digit > 9) {
+        			var sum = 0;
+
+        			while (digit > 0) {
+            			sum += digit % 10;
+            			digit = Math.floor(single / 10);
+        			}
+
+       		 	digit = sum;
+    			}
+
+    			var fortune = "";
+    				switch (digit) {
+        			case 0:
+            			fortune = "Somebody appreciates the unique you.";
+            			break;
+       			case 1:
+           				fortune = "Little by little, one travels far.";
+            			break;
+        			case 2:
+            			fortune = "Free your mind, and the rest will follow.";
+            			break;
+        			case 3:
+            			fortune = "Be careful who you trust. Salt and sugar look the same.";
+            			break;
+        			case 4:
+            			fortune = "Happiness is right under your nose.";
+            			break;
+        			case 5:
+            			fortune = "You will have a fun and exciting day.";
+            			break;
+        			case 6:
+            			fortune = "One bad chapter doesn't mean your story is over.";
+            			break;
+        			case 7:
+            			fortune = "You will learn something new and valuable today.";
+            			break;
+        			case 8:
+            			fortune = "Look how far you've come.";
+            			break;
+        			case 9:
+            			fortune = "You will have quite a lucky day.";
+            			break;
+    				}
+
+    				document.getElementById("fortune").innerHTML = fortune;
+			}
+		</script>
+	</body>
+</html>
