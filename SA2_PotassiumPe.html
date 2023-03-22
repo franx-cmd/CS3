@@ -58,9 +58,14 @@
 
         <script>
 		// Changes the picture and title
-           	function cPix(btn){
-			document.getElementById("avatar").src = btn.src;
-			document.getElementById("avatar").title = btn.title;
+           	function cPix(btn){ 
+			let img = document.getElementById("avatar");
+    			let img2 = img.src;
+			let title = img.title;
+    			img.src = btn.src;
+    			btn.src = img2;
+			img.title = btn.title;
+			btn.title = title;
 		}
         </script>
 	</body>
