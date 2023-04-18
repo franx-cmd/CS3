@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Nested Loop</title>
+
+		<style>
+			table, td{
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<br>
+		<p>[Please enter a number between 2 and 10]</p>
+		<input type="text" id="start"> by <input type="text" id="end">
+		<br><br>
+		<button onclick="validate()">Click when ready!</button>
+
+		<br><br>
+		<table id="table"></table>
+
+		<script>
+			function validate(){
+				let x = parseInt(document.getElementById("start").value);
+				let y = parseInt(document.getElementById("end").value);
+  				
+				//Checks if number entered is correct
+				if ((isNaN(x) || isNaN(y)) || (x < 2 || x > 10) || (y < 2 || y > 10)) {
+    					alert("Numbers must be between 2 and 10");
+    					return false;
+				}
+        	
+				let table = "<table>";
+				
+				for (let i = 1; i <= x; i++) {
+					table += "<tr>";
+
+					for (let j = 1; j <= y; j++) {
+						table += "<td>" + (i * j) + "</td>";
+					}
+
+				table += "</tr>";
+				}
+				
+				table += "</table>";
+				document.getElementById("table").innerHTML = table;
+			}
+		</script>
+	</body>
+</html>
