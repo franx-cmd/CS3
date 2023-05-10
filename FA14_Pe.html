@@ -156,7 +156,7 @@
      			<div class="container">
         			<div class="form">
         				<form autocomplete="off">
-					<fieldset>
+						<fieldset>
 						<legend>Sign-Up</legend>
            				
 							<div id="input-container">
@@ -192,9 +192,9 @@
               						<textarea name="message" placeholder="A short paragraph of your interest.." id="message" onblur="red(this)" onfocus="green(this)" required></textarea>
            						</div>
 
-            					<input type="button" value="Send" class="send" onclick="display()">
+            						<input type="button" value="Send" class="send" onclick="display()">
 							<input type="reset" value="Clear" class="reset" onclick="cl()">
-					</fieldset>
+						</fieldset>
           				</form>
 				</div>
 			</div>
@@ -252,7 +252,6 @@
         				document.getElementById("title").innerHTML = "Invalid! Try again!";
    				}
 			}
-
 
 			function cl(){
 				document.getElementById("display").innerHTML = "";
