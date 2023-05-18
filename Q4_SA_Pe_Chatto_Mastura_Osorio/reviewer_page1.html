@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NCE Reviewer | Mathematics Ability</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset=UTF-8">
+		<link rel = "icon" href = "logo-digital.png" type = "image/x-icon">
+
+		<style>
+			*{
+				font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+
+			body{
+				margin:0px;
+			}
+
+			label{
+				color:rgb(0, 0, 0);
+			}
+
+			#top{
+				z-index: 3;
+				width:100%;
+				position:fixed;
+				top:0;
+			}
+		
+			#one{
+				width: 220px;
+				height: 200px;
+			}
+
+			#two{
+				width: 240px;
+				height: 200px;
+			}
+
+			#three, #four{
+				width: 240px;
+				height: 180px;
+			}		
+
+			#pshs{
+				width:100%;
+				height:400px;
+				object-fit: cover;
+			}
+
+			form{
+				left: 0; 
+				right: 0; 
+				margin-left: auto; 
+				margin-right: auto; 
+				width:700px;
+				top:100px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+			}
+
+			h1{
+				margin-top:50px;
+			}
+
+			p{
+				font-size: medium;
+				margin:10px;
+				text-align: justify;
+  				text-justify: inter-word;
+			}
+
+			#headerTest{
+				padding-top: 1%;
+				padding-bottom: 1%;
+				width:100%;
+				height:70px;
+				background-color:rgb(13, 46, 91);
+			}
+
+			#headerWord{
+				color:white;
+				font-size:40px;
+				text-indent: 5%;
+			}
+
+			h1,h2{
+				border-left: solid rgb(13, 46, 91) 5px;
+				margin-left:20px;
+				padding:10px;
+			}
+
+			select{
+				width:200px;
+				height:30px;
+				background-color:rgb(223, 223, 235);
+				font-size: 16px;
+				margin-left:10px;
+				border-radius: 5px;
+				border:none;
+				margin-bottom: 10px;
+			}
+
+			textarea{
+				margin-left:10px;
+				background-color:rgb(223, 223, 235);
+				border-radius: 5px;
+				border:none;
+			}
+
+			h3{
+				margin-left:10px;
+			}
+
+			#submit{
+				float: right;
+				background-color: rgb(13, 46, 91);
+				color:white;
+				font-size: 17px;
+				padding:10px;
+				border-radius:10px;
+				transform: translate(-15px, -55px);
+				border:none;
+			}
+
+			#reset{
+				float: left;
+				background-color: rgb(255, 255, 255);
+				color:rgb(181, 181, 181);
+				font-size: 17px;
+				padding:10px;
+				border:none;
+				transform: translate(15px, -55px);;
+			}
+
+			#explain{
+				background-color: rgb(191, 214, 218);
+				margin: 10px;
+				
+			}
+
+			#reset:hover{
+				text-shadow: 0 0 10px #838383, 0 0 10px #999999;
+				color: #ffffff;
+				transition: 0.4s;
+			}
+
+			#reset:active{
+				text-shadow: 0;
+				color:rgb(181, 181, 181);
+				transition: 0.1s;
+			}
+
+			#submit:hover{
+				background-color: rgb(21, 66, 129);
+				transition: 0.3s;
+			}
+
+			#submit:active{
+				background-color: rgb(13, 46, 91);
+				transform: translate(-15px, -50px);
+				transition: 0.3s;
+
+			}
+
+			#footer{
+				color: grey;
+				font-size: 10px;
+				float:right;
+			}
+
+			#botPic{
+				width: 100%;
+				bottom:0px;
+				height:100px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+			<img id="top"src="topPic.png">
+			<img id="pshs"src="love-Pisay.jpg">
+		<header>
+			<h1>PSHS NCE REVIEWER</h1>			
+		</header>
+
+		<div>
+			<h2>PSHS National Competitive Examination Reviewer | Mathematics Ability</h2>
+		</div>
+
+
+
+		<form onsubmit="return submitted()">
+			<div id="headerTest"><p id="headerWord">Test -/20</p></div>
+			<div>
+				<p>1. My watch is set correctly at 9 A.M.  If it loses 2 minutes every hour, what will be the time on my watch if the correct time is 4 P.M. the next day?</p>
+				<select name="options" id="question1">
+					<option value="a">A. 2:58 P.M.</option>
+					<option value="b">B. 3:29 P.M.</option>
+					<option value="c">C. 4:31 P.M.</option>
+					<option value="d">D. 5:02 P.M.</option>
+				</select>
+			</div>
+			<div id="explain" class="explain1">
+				<label id="explanation1"></p>
+			</div>
+
+
+
+			<div>
+				<p>2. By what number should √1/4 be multiplied to give the result 1?</p>
+				<select name="options" id="question2">
+					<option value="a">A. ¼</option>
+					<option value="b">B. ½</option>
+					<option value="c">C. 2</option>
+					<option value="d">D. 4</option>
+				</select>
+			</div>
+			<div id="explain" class="explain2">
+				<label id="explanation2"></p>
+			</div>
+
+
+
+			<div>
+				<p>3. James answered a 40-item examination. He gets 5 points for every correct answer but he loses 2 points for every wrong answer. What was his total score if he correctly answered 75% of the items?</p>
+				<select name="options" id="question3">
+					<option value="a">A. 150 points</option>
+					<option value="b">B. 148 points</option>
+					<option value="c">C. 130 points</option>
+					<option value="d">D. 100 points</option>
+				</select>
+			</div>
+			<div id="explain" class="explain3">
+				<label id="explanation3"></p>
+			</div>
+
+
+
+			<div>
+				<p>4. Thirty-six men can finish building a house in 120 days. If a third of the original number of men were added, how many days would take the whole group to finish the same house?</p>
+				<select name="options" id="question4">
+					<option value="a">A. 12</option>
+					<option value="b">B. 40</option>
+					<option value="c">C. 90</option>
+					<option value="d">D. 160</option>
+				</select>
+			</div>
+			<div id="explain" class="explain4">
+				<label id="explanation4"></p>
+			</div>
+
+
+
+			<div>
+				<p>5. What is the next term of the sequence: 2, 5, 11, 23, …?</p>
+				<select name="options" id="question5">
+					<option value="a">A. 24</option>
+					<option value="b">B. 34</option>
+					<option value="c">C. 41</option>
+					<option value="d">D. 47</option>
+				</select>
+			</div>
+			<div id="explain" class="explain5">
+				<label id="explanation5"></p>
+			</div>
+
+
+
+
+
+
+
+
+			<div>
+				<p>6. On his first birthday, Rico placed on P5 coin in a jar. On his second birthday, he placed two P5 coins in the same jar. Every birthday he had thereafter, he put in as many P5 coins as his age in years. If he now has a total of P140 in the jar, how old is he?</p>
+				<select name="options" id="question6">
+					<option value="a">A. 7</option>
+					<option value="b">B. 9</option>
+					<option value="c">C. 14</option>
+					<option value="d">D. 28</option>
+				</select>
+			</div>
+			<div id="explain" class="explain6">
+				<label id="explanation6"></p>
+			</div>
+
+
+
+			<div>
+				<p>7. What is the missing number in the circle?</p>
+				<img id="one" src="1.png">
+				<br>
+				<select name="options" id="question7">
+					<option value="a">A. 2</option>
+					<option value="b">B. 6</option>
+					<option value="c">C. 8</option>
+					<option value="d">D. 12</option>
+				</select>
+			</div>
+			<div id="explain" class="explain7">
+				<label id="explanation7"></p>
+			</div>
+
+		
+
+
+			<div>
+				<p>8. The faces of a big cube were painted. Then it was divided into 27 smaller cubes of the same size. How many small cubes have only one face painted?</p>
+				<select name="options" id="question8">
+					<option value="a">A. 6</option>
+					<option value="b">B. 12</option>
+					<option value="c">C. 18</option>
+					<option value="d">D. 24</option>
+				</select>
+			</div>
+			<div id="explain" class="explain8">
+				<label id="explanation8"></p>
+			</div>
+
+
+
+
+			<div>
+				<p>9. Eight unit cubes are glued to form a 2 by 2 by 2 cube. If one corner unit cube is removed, what is the total surface area of the resulting figure?</p>
+				<select name="options" id="question9">
+					<option value="a">A. 8 square units</option>
+					<option value="b">B. 18 square units</option>
+					<option value="c">C. 21 square units</option>
+					<option value="d">D. 24 square units</option>
+				</select>
+			</div>
+			<div id="explain" class="explain9">
+				<label id="explanation9"></p>
+			</div>
+
+
+
+			<div>
+				<p>10. The perimeter of any given polygon can be solved by getting the sum of all its sides. If the perimeter of the polygon given on the right is 72 inches (in), and the length of the sides A and B are equal, what is the length of side A?</p>
+				<img id="two" src="2.png">
+				<br>
+				<select name="options" id="question10">
+					<option value="a">A. 50 in</option>
+					<option value="b">B. 22 in</option>
+					<option value="c">C. 11 in</option>
+					<option value="d">D. 5.5 in</option>
+				</select>
+			</div>
+			<div id="explain"class="explain10">
+				<label id="explanation10"></p>
+				
+			</div>
+
+
+
+
+			<div>
+				<p>11. Two identical regular hexagons (6-sided polygons with equal length of sides) were placed on top of each other as shown on the figure below.  If the perimeter (total length of the sides) of one hexagon is 30 inches, what is the total perimeter of the resulting figure?</p>
+				<img id="three" src="3.png">
+				<br>
+				<select name="options" id="question11">
+					<option value="a">A. 40 inches</option>
+					<option value="b">B. 48 inches</option>
+					<option value="c">C. 64 inches</option>
+					<option value="d">D. 80 inches</option>
+				</select>
+			</div>
+			<div id="explain" class="explain11">
+				<label id="explanation11"></p>
+			</div>
+
+
+
+
+			<div>
+				<p>12. An ant walks around the edges of different shapes? In which shape will the ant walk the SHORTEST distance?</p>
+				<select name="options" id="question12">
+					<option value="a">A. A triangle with sides 9 cm, 9 cm, and 8 cm</option>
+					<option value="b">B. A square with sides 4 cm</option>
+					<option value="c">C. A trapezoid with legs 2 cm and 2 cm, and bases 3 cm and 5 cm</option>
+					<option value="d">D. A regular pentagon with sides 6 cm</option>
+				</select>
+			</div>
+			<div id="explain"class="explain12">
+				<label id="explanation12"></p>
+			</div>
+
+
+
+
+			<div>
+				<p>13. The figure drawn is rectangle ABCD. What is the value of a?</p>
+				<img id="four" src="4.png">
+				<br>
+				<select name="options" id="question13">
+					<option value="a">A. -3</option>
+					<option value="b">B. -1</option>
+					<option value="c">C. 1</option>
+					<option value="d">D. 3</option>
+				</select>
+			</div>
+			<div id="explain"class="explain13">
+				<label id="explanation13"></p>
+			</div>
+
+
+
+			<div>
+				<p>14. A rectangle has an area of 100 cm^2. The lengths of its sides are doubled to form a new rectangle. How does the area of the new rectangle compare with the area of the original rectangle?</p>
+				<select name="options" id="question14">
+					<option value="a">A. The bigger rectangle is 2 times the smaller rectangle.</option>
+					<option value="b">B. The bigger rectangle is 4 times the smaller rectangle.</option>
+					<option value="c">C. The bigger rectangle is 8 times the smaller rectangle.</option>
+					<option value="d">D. The two areas are the same.</option>
+				</select>
+			</div>
+			<div id="explain"class="explain14">
+				<label id="explanation14"></p>
+			</div>
+
+
+
+			<div>
+				<p>15. Carol has a rectangular sheet of paper measuring 48 cm by 72 cm paper. She wants to cut it into the LEAST number of square pieces without wasting any material. How many squares can she cut from the paper?</p>
+				<select name="options" id="question15">
+					<option value="a">A. 3</option>
+					<option value="b">B. 6</option>
+					<option value="c">C. 12</option>
+					<option value="d">D. 18</option>
+				</select>
+			</div>
+			<div id="explain"class="explain15">
+				<label id="explanation15"></p>
+			</div>
+
+
+			<hr>
+			<h3>For the last five questions, ONLY type in a number.</h3>
+
+
+
+			<div>
+				<p>16. A teacher gave a three-item TRUE or FALSE quiz. How many possible combinations of answers can students have?</p>
+				<textarea placeholder="Enter Number"id="text16"></textarea>
+			</div>
+			<div id="explain"class="explain16">
+				<label id="explanation16"></p>
+			</div>
+
+
+
+			<div>
+				<p>17. What is the sum of the greatest 3-digit number and the greatest 4-digit number?</p>
+				<textarea placeholder="Enter Number" id="text17"></textarea>
+			</div>
+			<div id="explain"class="explain17">
+				<label id="explanation17"></p>
+			</div>
+
+
+			<div>
+				<p>18. I need 15 pieces of similar fruits to make 3 glasses of juice. How many pieces of the same fruit do I need to make a dozen glasses of juice?</p>						
+				<textarea placeholder="Enter Number" id="text18"></textarea>
+			</div>
+			<div id="explain"class="explain18">
+				<label id="explanation18"></p>
+			</div>
+
+
+
+			<div>
+				<p>19. How many fifty-peso bills are equivalent to 30 twenty-peso bills?</p>
+				<textarea placeholder="Enter Number" id="text19"></textarea>
+			</div>
+			<div id="explain"class="explain19">
+				<label id="explanation19"></p>
+			</div>
+
+
+
+
+			<div>
+				<p>20. 62.5% of 280 is what percent of 200?</p>
+				<textarea placeholder="Enter Number" id="text20"></textarea>
+			</div>
+			<div id="explain"class="explain20">
+				<label id="explanation20"></p>
+			</div>
+			<br>
+			<br>
+			<br>
+
+
+
+			<input id="submit"type="submit" value="Submit Final Answers">
+			<input id="reset" type="reset" value="Reset Test Answers" onclick="cl()">
+
+
+		</form>
+
+
+		<br>
+		<div>
+		<img id="botPic"src="bottom.png">
+		<footer id="footer">&#169; Group 9</footer> 
+		</div>
+	</body>
+	<script>
+			function submitted(){
+
+			
+
+				var answer1 = document.getElementById("question1").value;
+				var answer2 = document.getElementById("question2").value;
+				var answer3 = document.getElementById("question3").value;
+				var answer4 = document.getElementById("question4").value;
+				var answer5 = document.getElementById("question5").value;
+				var answer6 = document.getElementById("question6").value;
+				var answer7 = document.getElementById("question7").value;
+				var answer8 = document.getElementById("question8").value;
+				var answer9 = document.getElementById("question9").value;
+				var answer10 = document.getElementById("question10").value;
+				var answer11 = document.getElementById("question11").value;
+				var answer12 = document.getElementById("question12").value;
+				var answer13 = document.getElementById("question13").value;
+				var answer14 = document.getElementById("question14").value;
+				var answer15 = document.getElementById("question15").value;
+				var answer16 = parseFloat(document.getElementById("text16").value);
+				var answer17 = parseFloat(document.getElementById("text17").value);
+				var answer18 = parseFloat(document.getElementById("text18").value);
+				var answer19 = parseFloat(document.getElementById("text19").value);
+				var answer20 = parseFloat(document.getElementById("text20").value);
+				var score = 0;
+				
+				if(isNaN(answer16) == 1 || isNaN(answer16) == 1 || isNaN(answer17) == 1 || isNaN(answer18) == 1 || isNaN(answer19) == 1 || isNaN(answer20) == 1){
+					alert("There is a Missing or incorrectly inputted Answer");
+				}else{
+
+
+				if(answer1 == "a"){
+					document.getElementById("explanation1").innerHTML = "The Correct Answer was A! Congratulations";
+					score++;
+				}else{
+					document.getElementById("explanation1").innerHTML = "Wrong, the correct answer is choice A. The watch began at 9 A.M. and ended at 4 P.M., which will give <br>a difference of 31 hours. Multiply the 31 hours <br>with the 2 minutes (because the watch loses 2<br> minutes every hour) to arrive at 62 minutes. Then, subtract <br>it with 4 P.M. to give a result of 2:58 P.M.";
+				}		
+				if(answer2 == "c"){
+					document.getElementById("explanation2").innerHTML = "The Correct Answer was C! Congratulations";
+					score++;
+				}else{
+					document.getElementById("explanation2").innerHTML = "Wrong, the correct answer is choice C,  The square root of ¼ is ½, so multiplying it by 2 will give 1.";
+				}
+				if(answer3 == "c"){
+					document.getElementById("explanation3").innerHTML = "The Correct Answer was C! Congratulations";
+					score++;
+				}else{
+					document.getElementById("explanation3").innerHTML = "Wrong, the correct answer is choice C, C. 75% of the 40 items is 30, which is the amount of items James answered correctly. Multiply the 30 items by the 5 points – this results to 150 points. Then, subtract the 150 points with the 10 items James answered incorrectly multiplied by the 2 points, to get 130 points.";
+				}		
+				if(answer4 == "c"){
+					document.getElementById("explanation4").innerHTML = "The Correct Answer was C! Congratulations";
+					score++;
+				}else{
+					document.getElementById("explanation4").innerHTML = "Wrong, the correct answer is choice C, Since 36 men multiplied by 120 days equals 4320 man-days, we divide it with the number of men added by a third, which is 36 + 12 (a third of the men) = 48, we would get 90 days.";
+				}				
+				if(answer5 == "d"){
+					document.getElementById("explanation5").innerHTML = "The Correct Answer was D! Congratulations";
+					score++;
+				}else{
+					document.getElementById("explanation5").innerHTML = "Wrong, the correct answer is choice D, Since the pattern is 2x + 1, the next term is 47 or 2(23) + 1.";
+				}
+				if(answer6 == "a"){
+					document.getElementById("explanation6").innerHTML = "The Correct Answer was A! Congratulations";
+					score++;
+				}else{
+					document.getElementById("explanation6").innerHTML = "Wrong, the correct answer is choice A, The summation of 5(1)+5(2)+5(3)+5(4)+5(5)+5(6)+5(7) results in 140, the amount after 7 years old.";
+				}
+				if(answer7 == "b"){
+					document.getElementById("explanation7").innerHTML = "The Correct Answer was B! Congratulations";
+					score++;
+				}else{
+					document.getElementById("explanation7").innerHTML = "Wrong, the correct answer is choice B, Since the pattern is the difference of 3,  subtracting 6 by 3 would result in 3. Hence, the answer is B. ";
+				}
+				if(answer8 == "a"){
+					document.getElementById("explanation8").innerHTML = "The Correct Answer was A! Congratulations";
+					score++;
+				}else{
+					document.getElementById("explanation8").innerHTML = "Wrong, the correct answer is choice A, Visualizing a cube divided into 27 smaller cubes would have the edges with more than one side painted, so only the middle cubes have one side painted. The amount of middle cubes is 6.";
+				}
+				if(answer9 == "c"){
+					document.getElementById("explanation9").innerHTML = "The Correct Answer was C! Congratulations";
+					score++;
+				}else{
+					document.getElementById("explanation9").innerHTML = "Wrong, the correct answer is choice C, Since the total surface area is 24 square units, removing a cube would subtract 3, which is equal to 21 square units.";
+				}
+				if(answer10 == "c"){
+					document.getElementById("explanation10").innerHTML = "The Correct Answer was C! Congratulations";
+					score++;
+				}else{
+					document.getElementById("explanation10").innerHTML = "Wrong, the correct answer is choice C, The sum of all sides (except A and B) is 50 in., subtract it with the perimeter or total, which is 72 to get a result of 22. Since we’re looking for side A’s length, we divide 22 with 2 because side A and side B have the same length, to arrive at 11 in.";
+				}
+				if(answer11 == "a"){
+					document.getElementById("explanation11").innerHTML = "The Correct Answer was A! Congratulations";
+					score++;
+				}else{
+					document.getElementById("explanation11").innerHTML = "Wrong, the correct answer is choice A, . Perimeter of rectangular hexagon = 6 × length of side<br>Length of side of given hexagon = 5 in.<br>Sides of new figure = 8 sides<br>Perimeter of new figure = 8 x 5 = 40 in.";
+				}
+				if(answer12 == "c"){
+					document.getElementById("explanation12").innerHTML = "The Correct Answer was C! Congratulations";
+					score++;
+				}else{
+					document.getElementById("explanation12").innerHTML = "Wrong, the correct answer is choice C, C. Find the perimeter of each letter. <br>a. 9 cm + 9 cm + 8 cm = 26 cm<br> b. 4(4cm) = 16 cm<br> c. 2 cm + 2 cm + 3 cm + 5 cm = 12 cm<br> d. 5(6 cm) = 30 cm<br> Therefore, C is the correct answer.";
+				}
+				if(answer13 == "b"){
+					document.getElementById("explanation13").innerHTML = "The Correct Answer was B! Congratulations";
+					score++;
+				}else{
+					document.getElementById("explanation13").innerHTML = "Wrong, the correct answer is choice B, Since Point D and Point A are situated at the same point of the x-axis and is Point D showing the x component, a is -1.";
+				}
+				if(answer14 == "b"){
+					document.getElementById("explanation14").innerHTML = "The Correct Answer was B! Congratulations";
+					score++;
+				}else{
+					document.getElementById("explanation14").innerHTML = "Wrong, the correct answer is choice B, A rectangle has 4 sides. If it doubles, the area of the new rectangle increases quadruple times the smaller rectangle.";
+				}
+				if(answer15 == "a"){
+					document.getElementById("explanation15").innerHTML = "The Correct Answer was A! Congratulations";
+					score++;
+				}else{
+					document.getElementById("explanation15").innerHTML = "Wrong, the correct answer is choice A, One square would have a length of 48 cm each side, while the other two would have a length of 24 cm each side. All without wasting any material.";
+				}
+				if(answer16 == "8"){
+					document.getElementById("explanation16").innerHTML = "The Correct Answer was 8! Congratulations";
+					score++;
+				}else{
+					document.getElementById("explanation16").innerHTML = "Wrong, the correct answer is number 8, <br>8 possible combinations. <br>TRUE TRUE TRUE<br>TRUE FALSE TRUE<br>TRUE TRUE FALSE<br>TRUE FALSE FALSE<br>FALSE FALSE FALSE<br>FALSE TRUE TRUE<br>FALSE FALSE TRUE<br>FALSE TRUE FALSE<br>Or 23= 8";
+				}
+				if(answer17 == "10998"){
+					document.getElementById("explanation17").innerHTML = "The Correct Answer was 10998! Congratulations";
+					score++;
+				}else{
+					document.getElementById("explanation17").innerHTML = "Wrong, the correct answer is 10,998,  999 + 9999 = 10,998";
+				}
+				if(answer18 == "60"){
+					document.getElementById("explanation18").innerHTML = "The Correct Answer was 60! Congratulations";
+					score++;
+				}else{
+					document.getElementById("explanation18").innerHTML = "Wrong, the correct answer is 60, Look for x wherein, 15/3 = x/12. It will give 3x = 180, so x is 60. Hence, 60 pieces of the same fruit is needed to make a dozen glasses of juice.";
+				}
+				if(answer19 == "12"){
+					document.getElementById("explanation19").innerHTML = "The Correct Answer was 12! Congratulations";
+					score++;
+				}else{
+					document.getElementById("explanation19").innerHTML = "Wrong, the correct answer is 12, 30 x 20 = 600 and divide this with 50. It will give 12. Therefore, 12 fifty-peso bills are equivalent to 30 twenty-peso bills.";
+				}
+				if(answer20 == "87.5"){
+					document.getElementById("explanation20").innerHTML = "The Correct Answer was 87.5! Congratulations";
+					score++;
+				}else{
+					document.getElementById("explanation20").innerHTML = "Wrong, the correct answer is 87.5, 625 x 280 = 175, 175 divided by 200 = 87.5";
+				}
+
+				}
+				
+
+				document.getElementById("headerWord").innerHTML = "Test - " + score + "/20";
+
+		return false;
+	}
+
+	function cl(){
+		document.getElementById("explanation1").innerHTML = "";
+		document.getElementById("explanation2").innerHTML = "";
+		document.getElementById("explanation3").innerHTML = "";
+		document.getElementById("explanation4").innerHTML = "";
+		document.getElementById("explanation5").innerHTML = "";
+		document.getElementById("explanation6").innerHTML = "";
+		document.getElementById("explanation7").innerHTML = "";
+		document.getElementById("explanation8").innerHTML = "";
+		document.getElementById("explanation9").innerHTML = "";
+		document.getElementById("explanation10").innerHTML = "";
+		document.getElementById("explanation11").innerHTML = "";
+		document.getElementById("explanation12").innerHTML = "";
+		document.getElementById("explanation13").innerHTML = "";
+		document.getElementById("explanation14").innerHTML = "";
+		document.getElementById("explanation15").innerHTML = "";
+		document.getElementById("explanation16").innerHTML = "";
+		document.getElementById("explanation17").innerHTML = "";
+		document.getElementById("explanation18").innerHTML = "";
+		document.getElementById("explanation19").innerHTML = "";
+		document.getElementById("explanation20").innerHTML = "";
+		document.getElementById("headerWord").innerHTML = "Test - " + "/20";
+	}
+	</script>
+</html>
+
+		
